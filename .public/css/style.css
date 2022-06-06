@@ -1,3 +1,15 @@
+.header__logo {
+  height: 100px;
+  width: 100px;
+}
 
+body {
+  color: #9356DC;
+}
+@media screen and (max-width: 599px) {
+  body {
+    color: #FF79DA;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

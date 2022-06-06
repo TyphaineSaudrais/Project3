@@ -1,0 +1,19 @@
+
+@import "./utils/variables";
+@import "./utils/mixins";
+
+
+
+.header__logo {
+
+    height: 100px;
+    width: 100px;
+
+}
+
+body {
+    color: $primary-colour;
+    @include mobile-only {
+        color: $secondary-colour;
+    }
+}
