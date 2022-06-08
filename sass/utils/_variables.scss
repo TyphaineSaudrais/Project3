@@ -6,8 +6,9 @@ $background-colour-light: rgb(222, 219, 219);
 $background-colour-lighter: rgb(239, 233, 233);
 $background-colour-dark: rgb(54, 52, 52); 
 $text-colour-white: rgb(249, 238, 238);
+$background-colour-white: #ffff;
 
-$police: (police-size-small: 20px, police-size-medium: 26px, police-size-big: 35px);
+$police: (police-size-very-small: 16px, police-size-small: 20px, police-size-medium: 26px, police-size-big: 35px);
 $weight: (font-weight-light: 500, font-weight-medium: 600,font-weight-strong: 700);
 
 $breakpoints: (mobile: 599px);

@@ -6,9 +6,18 @@
 @import "./base/base";
 @import "./layout/header";
 @import "./layout/footer";
+@import "./layout/list";
 @import "./components/restaurant-Map";
 @import "./pages/carte";
 
+
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+
+}
 
 body {
     color: $primary-colour;
