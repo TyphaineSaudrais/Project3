@@ -1,0 +1,36 @@
+.presentation {
+    &__location {
+        width: map-get($size, cover-width);
+        height: 10%;
+        @include flex-row-center;
+        background-color: $background-colour-light;
+        &__icon {
+            margin: 15px 5px 15px 5px; 
+            color: $text-colour-greyDark;    
+        }
+        &__paragraph {
+            margin: 15px 5px 15px 5px;
+            color: $text-colour-greyDark;  
+            @include mobile-only {
+                text-align: center; 
+            }  
+           
+        }
+    }
+    &__accroche {
+        padding: map-get($padding, padding-s);
+        margin: 0px 0px 0px 0px;
+        font-size: map-get($police ,police-size-medium);
+        font-weight:map-get($weight , font-weight-medium) ;
+    }
+    &__description {
+        padding: map-get($padding, padding-s);
+        margin:0px 0px 0px 0px;
+        font-size: map-get($police ,police-size-small);
+        font-weight:map-get($weight , font-weight-negative) ;
+        color: $text-colour-greyDark;
+    }
+    &__btn {
+        @include btn-violet;
+    }
+}

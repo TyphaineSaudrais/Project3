@@ -1,6 +1,6 @@
 .header {
-    width: 100%;
-    height: 100%;
+    width: map-get($size, cover-width);
+    height: map-get($size, cover-height);
     @include heading-shadow;
     &__logo {
         display: block;

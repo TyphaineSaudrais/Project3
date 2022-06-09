@@ -1,4 +1,5 @@
 
+
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./utils/functions";
@@ -6,22 +7,24 @@
 @import "./base/base";
 @import "./layout/header";
 @import "./layout/footer";
-@import "./layout/list";
+@import "./layout/sections";
 @import "./components/restaurant-Map";
+@import "./components/presentation";
+@import "./components/fonctionnement";
 @import "./pages/carte";
 
 
 
+
 html {
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
+    height: map-get($size, cover-height);
+    width: map-get($size, cover-width);
 
 }
 
 body {
-    color: $primary-colour;
+    color: $text-colour-black;
     @include mobile-only {
-        color: $secondary-colour;
+        color: $text-colour-black;
     }
 }

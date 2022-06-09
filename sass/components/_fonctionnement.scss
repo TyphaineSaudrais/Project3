@@ -1,0 +1,25 @@
+.fonctionnement {
+    &__title {
+        width: 50%;
+        text-align: center;
+        padding: map-get($padding, padding-s);
+        font-size: map-get($police ,police-size-medium);
+        font-weight:map-get($weight , font-weight-medium);
+        margin: auto;
+        margin-bottom: 20px;
+        @include mobile-only {
+            margin: 5px 5px 5px 5px;
+            text-align: start;
+        }
+    }
+    &__btn{
+        @include flex-column;
+        align-items: center;
+        &__link {
+            display: block;
+            @include btn-grey;
+            margin-bottom: 20px;
+        }
+    }
+    
+}

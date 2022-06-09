@@ -7,42 +7,51 @@
 @mixin heading-shadow {
     box-shadow: 0px 3px 3px $background-colour-light;
 }
-/* ====================  Margin =======================*/
-@mixin margin-h {
-    margin: 30px 20px 10px 30px ;
-}
-@mixin margin-side {
-    margin: 0px 20px 0px 30px;
-}
-@mixin margin-inline {
-    margin:  10px 10px 10px 0px;
-}
 
-@mixin margin-bottom {
-    margin-bottom: 40px;
+@mixin shadow {
+    box-shadow: 0px 3px 3px $background-colour-greyLight;
 }
-
-/* ==================================================*/
 
 @mixin invert-color {
     filter: invert(100%);
 }
 
-@mixin flex-row {
+@mixin flex-row-start {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     
 }
-
+@mixin flex-row-around {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+}
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
 @mixin flex-column {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     
 }
 
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+/*  ==================== radius  =============================*/
 @mixin border-radius {
     border-radius: 20px/20px;
     
@@ -58,9 +67,43 @@
     
 }
 
+/* ==========================================================*/
 
 @mixin position-absolute {
     position: absolute;
             top: 20px;
             right: 20px;
 }
+
+
+/*  ======================= BTN =============================*/
+@mixin btn-violet {
+    background-image: linear-gradient(to bottom right, $secondary-colour, $primary-colour);
+    width: 230px;
+    height: 50px;
+    border-radius: 30px /30px ;
+    text-align: center;
+    @include shadow; 
+    color: $text-colour-white;
+    line-height: 25px;
+    display: block;
+    padding: map-get($padding, padding-s);
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+@mixin btn-grey {
+    background-color: $background-colour-lighter;
+    width: 400px;
+    height: 80px;
+    border-radius: 20px /20px ;
+    text-align: center;
+    @include shadow; 
+    color: $text-colour-black;
+    line-height: 80px;
+}
+
+
+
+
+/*  =======================================================*/

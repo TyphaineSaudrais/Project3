@@ -1,12 +1,12 @@
 .restaurant {
     width: 90%;
     height: 40%;
-    border: 3px solid black;
-    margin: auto;
+    margin: auto; 
+    margin-bottom: 20px;
     @include border-radius;
-    @include heading-shadow;
+    @include shadow;
     &__img {
-        width: 100%;
+        width: map-get($size, cover-width);
         max-height: 150px;
         @include half-radius-up;
         object-fit: cover;
@@ -15,22 +15,24 @@
         width: 100%;
         height: 70px;
         background-color: $background-colour-white ;
+        color: $text-colour-black;
         position: relative;
         @include  flex-column;
         @include half-radius-down;
         &__title {
-            font-size: map-get($police, police-size-very-small);
+            font-size: map-get($police, police-size-small);
+            font-weight: map-get($weight ,font-weight-medium);
             height: 50%;
-            @include margin-side;
+            margin: 0px 20px 0px 30px;
         }
         &__paragraph {
             font-size: map-get($police, police-size-small);
+            font-weight: map-get($weight ,font-weight-negative);
             height: 50%;
-            margin: 0%;
-            @include margin-side;
+            margin: 0px 20px 0px 30px;
         }
         &__icon {
-            color: $background-colour;
+            color: $text-colour-grey;
             @include position-absolute; 
             font-size: 130%;
         }

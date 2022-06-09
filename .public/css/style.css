@@ -1,6 +1,8 @@
 @charset "UTF-8";
-/* ====================  Margin =======================*/
-/* ==================================================*/
+/*  ==================== radius  =============================*/
+/* ==========================================================*/
+/*  ======================= BTN =============================*/
+/*  =======================================================*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
@@ -471,7 +473,7 @@ template {
   filter: invert(100%);
 }
 .footer__nav__link {
-  color: rgb(249, 238, 238);
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -490,14 +492,29 @@ template {
   margin-bottom: 40px;
 }
 
+.presentation {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(244, 244, 244);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fonctionnement {
+  width: 100%;
+  height: 100%;
+}
+
 .list-restaurant {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  background-color: rgb(239, 233, 233);
+  background-color: rgb(244, 244, 244);
 }
 .list-restaurant__title {
   width: 90%;
@@ -507,10 +524,10 @@ template {
 .restaurant {
   width: 90%;
   height: 40%;
-  border: 3px solid black;
   margin: auto;
+  margin-bottom: 20px;
   border-radius: 20px/20px;
-  box-shadow: 0px 3px 3px rgb(222, 219, 219);
+  box-shadow: 0px 3px 3px rgb(194, 191, 191);
 }
 .restaurant__img {
   width: 100%;
@@ -522,29 +539,115 @@ template {
   width: 100%;
   height: 70px;
   background-color: white;
+  color: black;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   border-radius: 0px 0px 20px 20px;
 }
 .restaurant__description__title {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 600;
   height: 50%;
   margin: 0px 20px 0px 30px;
 }
 .restaurant__description__paragraph {
   font-size: 20px;
+  font-weight: 300;
   height: 50%;
-  margin: 0%;
   margin: 0px 20px 0px 30px;
 }
 .restaurant__description__icon {
-  color: rgb(123, 119, 119);
+  color: grey;
   position: absolute;
   top: 20px;
   right: 20px;
   font-size: 130%;
+}
+
+.presentation__location {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgb(222, 219, 219);
+}
+.presentation__location__icon {
+  margin: 15px 5px 15px 5px;
+  color: rgb(72, 70, 70);
+}
+.presentation__location__paragraph {
+  margin: 15px 5px 15px 5px;
+  color: rgb(72, 70, 70);
+}
+@media screen and (max-width: 599px) {
+  .presentation__location__paragraph {
+    text-align: center;
+  }
+}
+.presentation__accroche {
+  padding: 10px;
+  margin: 0px 0px 0px 0px;
+  font-size: 26px;
+  font-weight: 600;
+}
+.presentation__description {
+  padding: 10px;
+  margin: 0px 0px 0px 0px;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgb(72, 70, 70);
+}
+.presentation__btn {
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  width: 230px;
+  height: 50px;
+  border-radius: 30px/30px;
+  text-align: center;
+  box-shadow: 0px 3px 3px rgb(194, 191, 191);
+  color: white;
+  line-height: 25px;
+  display: block;
+  padding: 10px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.fonctionnement__title {
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  margin: auto;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 599px) {
+  .fonctionnement__title {
+    margin: 5px 5px 5px 5px;
+    text-align: start;
+  }
+}
+.fonctionnement__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.fonctionnement__btn__link {
+  display: block;
+  background-color: rgb(244, 244, 244);
+  width: 400px;
+  height: 80px;
+  border-radius: 20px/20px;
+  text-align: center;
+  box-shadow: 0px 3px 3px rgb(194, 191, 191);
+  color: black;
+  line-height: 80px;
+  margin-bottom: 20px;
 }
 
 .carte__img {
@@ -555,15 +658,14 @@ template {
 html {
   height: 100%;
   width: 100%;
-  margin: 0 auto;
 }
 
 body {
-  color: #9356DC;
+  color: black;
 }
 @media screen and (max-width: 599px) {
   body {
-    color: #FF79DA;
+    color: black;
   }
 }
 
