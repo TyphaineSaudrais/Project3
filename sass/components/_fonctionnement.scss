@@ -17,9 +17,25 @@
         align-items: center;
         &__link {
             display: block;
+            width: 350px;
+            height: 80px;
             @include btn-grey;
             margin-bottom: 20px;
+            @include mobile-only {
+                width: 90%;
+                height: 80px;
+            }
+            position: relative;
+            &__first {
+                position: absolute;
+                top: 42%;
+                left: -5px;
+            }
+            &__second {
+                margin-right: 10%;
+            }
         }
+       
     }
     
 }

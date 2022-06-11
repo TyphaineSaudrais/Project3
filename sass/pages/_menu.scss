@@ -1,0 +1,81 @@
+.menu {
+    position: relative;
+    background-color: $background-colour-light;
+    &__img {
+        width: map-get($size, cover-width );
+        height: 10%;
+        object-fit: cover;
+        
+    }
+    &__title {
+        width: 50%;
+        margin: auto;
+        margin-top: 30px;
+        height: 20%;
+        @include mobile-only {
+            width: map-get($size, cover-width );
+            height: 100%;
+            text-align: center;
+            font-size: map-get($police, police-size-medium);
+        }
+        text-align: center;
+        
+    }
+    &__title i {
+        margin-left: 20px;
+        @include mobile-only {
+            margin-left: 10px;
+            font-size: map-get($police, police-size-medium);
+            font-weight: map-get($weight , font-weight-negative) ;
+            color: $background-colour-dark;
+        }
+    }
+    &__entrees {
+        width: 50%;
+        margin: auto;
+        height: 20%;
+        @include mobile-only {
+            width: map-get($size, cover-width );
+            height: 100%;
+        }
+        &__title{
+            width: 100%;
+        }
+        &__choix {
+            display: block;
+            width: 280px;
+            height: 60px;
+            @include btn-white;
+        }
+    }
+    &__plats {
+        width: 50%;
+        margin: auto;
+        height: 20%;
+        @include mobile-only {
+            width: map-get($size, cover-width );
+            height: 100%;
+        } &__title{
+            
+        }
+        &__choix {
+
+        }
+
+    }
+    &__desserts {
+        width: 50%;
+        margin: auto;
+        height: 20%;
+        @include mobile-only {
+            width: map-get($size, cover-width );
+            height: 100%;
+        } &__title{
+            
+        }
+        &__choix {
+
+        }
+
+    }
+}

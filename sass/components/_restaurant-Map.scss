@@ -5,11 +5,20 @@
     margin-bottom: 20px;
     @include border-radius;
     @include shadow;
+    position: relative;
     &__img {
         width: map-get($size, cover-width);
         max-height: 150px;
         @include half-radius-up;
         object-fit: cover;
+    }
+    &__btn {
+        width: 100px;
+        height: 30px;
+        position: absolute;
+        top: 20px;
+        right:30px;
+        @include btn-green;
     }
     &__description {
         width: 100%;

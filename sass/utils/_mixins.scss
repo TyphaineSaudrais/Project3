@@ -94,13 +94,26 @@
 
 @mixin btn-grey {
     background-color: $background-colour-lighter;
-    width: 400px;
-    height: 80px;
     border-radius: 20px /20px ;
     text-align: center;
     @include shadow; 
     color: $text-colour-black;
     line-height: 80px;
+}
+
+@mixin btn-green {
+    background-color: $tertiary-colour;
+    color: darken($color:$tertiary-colour, $amount: 40%);
+    text-align: center;
+    line-height: 30px;
+    font-weight: map-get($weight, font-weight-light);
+}
+@mixin btn-white {
+    background-color: $background-colour-white;
+    border-radius: 20px /20px ;
+    @include shadow; 
+    color: $text-colour-black;
+    line-height: 30px;
 }
 
 
