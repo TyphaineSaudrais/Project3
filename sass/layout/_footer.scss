@@ -20,6 +20,10 @@
                 margin:  10px 10px 10px 0px;
                 font-size: map-get($police, police-size-small);
                 font-weight: map-get($weight, font-weight-light);
+                @include mobile-only {
+                    font-size: map-get($police, police-size-hypra-small);
+                font-weight: map-get($weight, font-weight-negative);
+                }
                 &__last {
                     margin-bottom: 40px;
                 }

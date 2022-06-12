@@ -50,6 +50,11 @@
     justify-content: center;
     align-items: center;
     
+}@mixin flex-column-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 /*  ==================== radius  =============================*/
 @mixin border-radius {
@@ -109,7 +114,7 @@
     font-weight: map-get($weight, font-weight-light);
 }
 @mixin btn-white {
-    background-color: $background-colour-white;
+    background-color: darken($color:$background-colour-white, $amount: 10%);
     border-radius: 20px /20px ;
     @include shadow; 
     color: $text-colour-black;
