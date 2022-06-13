@@ -22,6 +22,9 @@
         margin: 0px 0px 0px 0px;
         font-size: map-get($police ,police-size-medium);
         font-weight:map-get($weight , font-weight-medium) ;
+        @include mobile-only {
+            text-align: center;
+        }
     }
     &__description {
         padding: map-get($padding, padding-s);
@@ -29,6 +32,9 @@
         font-size: map-get($police ,police-size-small);
         font-weight:map-get($weight , font-weight-negative) ;
         color: $text-colour-greyDark;
+        @include mobile-only {
+            text-align: center;
+        }
     }
     &__btn {
         @include btn-violet;

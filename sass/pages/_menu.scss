@@ -2,7 +2,7 @@
     width: map-get($size, cover-width);
     height: 100%;
     position: relative;
-    background-color: $background-colour-light;
+    background-color: $background-colour-lightergrey;
     &__img {
         width: map-get($size, cover-width );
         height: 500px;
@@ -28,6 +28,7 @@
         
     }
     &__title i {
+        
         margin-left: 20px;
         @include mobile-only {
             margin-left: 10px;
@@ -47,6 +48,10 @@
         }
         &__title{
             width: 100%;
+            position: relative;
+        }
+        &__title::after {
+            @include border-green
         }
         &__choix {
             display: block;
@@ -91,8 +96,13 @@
         @include mobile-only {
             width: map-get($size, cover-width );
             height: 100%;
-        } &__title{
+        }
+        &__title{
             width: 100%;
+            position: relative;
+        }
+        &__title::after {
+            @include border-green
         }
         &__choix {
             display: block;
@@ -138,8 +148,13 @@
         @include mobile-only {
             width: map-get($size, cover-width );
             height: 100%;
-        } &__title{
+        }
+        &__title{
             width: 100%;
+            position: relative;
+        }
+        &__title::after {
+            @include border-green
         }
         &__choix {
             display: block;

@@ -1,3 +1,18 @@
+.list-restaurant {
+    &__title {
+        width: 90%; 
+        height: 10%;
+        margin: auto;
+        font-size: map-get($police, police-size-medium);
+        font-weight: map-get($weight , font-weight-medium);
+        @include mobile-only {
+            margin: 20px 20px 20px 20px;
+            text-align: start;
+        }
+        }
+}
+
+
 .restaurant {
     width: 90%;
     height: 40%;
@@ -32,13 +47,13 @@
             font-size: map-get($police, police-size-small);
             font-weight: map-get($weight ,font-weight-medium);
             height: 50%;
-            margin: 0px 20px 0px 30px;
+            margin: 5px 20px 0px 20px;
         }
         &__paragraph {
             font-size: map-get($police, police-size-small);
             font-weight: map-get($weight ,font-weight-negative);
             height: 50%;
-            margin: 0px 20px 0px 30px;
+            margin: 5px 20px 0px 20px;
         }
         &__icon {
             color: $text-colour-grey;

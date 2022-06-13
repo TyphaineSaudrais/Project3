@@ -80,6 +80,15 @@
             right: 20px;
 }
 
+@mixin border-green {
+    content: "";
+            width: 50px;
+            position: absolute;
+            bottom: -10px;
+            left: 0px;
+            border: 2px solid $tertiary-colour;
+
+}
 
 /*  ======================= BTN =============================*/
 @mixin btn-violet {
@@ -114,7 +123,7 @@
     font-weight: map-get($weight, font-weight-light);
 }
 @mixin btn-white {
-    background-color: darken($color:$background-colour-white, $amount: 10%);
+    background-color: darken($color:$background-colour-white, $amount: 3%);
     border-radius: 20px /20px ;
     @include shadow; 
     color: $text-colour-black;
