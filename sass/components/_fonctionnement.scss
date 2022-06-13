@@ -29,10 +29,13 @@
             &__first {
                 position: absolute;
                 top: 42%;
-                left: -5px;
+                left: -8px;
+                font-size: map-get($police,police-size-mega-small);
+                @include circle-purple;     
             }
             &__second {
                 margin-right: 10%;
+                font-size: map-get($police,police-size-very-small);
             }
         }
        

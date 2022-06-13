@@ -87,7 +87,7 @@
             bottom: -10px;
             left: 0px;
             border: 2px solid $tertiary-colour;
-
+         
 }
 
 /*  ======================= BTN =============================*/
@@ -128,9 +128,29 @@
     @include shadow; 
     color: $text-colour-black;
     line-height: 30px;
+    margin-left: 10px;
+}
+
+@mixin circle-purple {
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+    background-color: $primary-colour;
+    color: $text-colour-white;
+    line-height: 20px;
 }
 
 
 
 
 /*  =======================================================*/
+
+@mixin Title-menu-styling {
+    width: 100%;
+    position: relative;
+    text-transform: uppercase; 
+    font-size: map-get($police, police-size-hypra-small);
+    font-weight: map-get($weight , font-weight-negative) ;
+    margin-left: 10px;
+    margin-top: 15px;
+}
