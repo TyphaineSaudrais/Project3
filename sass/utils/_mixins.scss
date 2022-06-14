@@ -114,6 +114,19 @@
     color: $text-colour-black;
     line-height: 80px;
 }
+@mixin btn-grey-change {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;  
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    border-radius: 20px /20px ;
+    background-color: lighten($color: $primary-colour, $amount: 10%);
+    transition: opacity 250ms;
+}
 
 @mixin btn-green {
     background-color: $tertiary-colour;
@@ -122,6 +135,8 @@
     line-height: 26px;
     font-weight: map-get($weight, font-weight-light);
 }
+
+
 @mixin btn-white {
     background-color: darken($color:$background-colour-white, $amount: 3%);
     border-radius: 20px /20px ;
