@@ -8,23 +8,13 @@
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/sections";
-@import "./components/restaurant-Map";
 @import "./components/presentation";
 @import "./components/fonctionnement";
+@import "./components/restaurant-Map";
+@import "./pages/layoutpage";
 @import "./pages/menu";
 
 
 
 
-html {
-    height: map-get($size, cover-height);
-    width: map-get($size, cover-width);
 
-}
-
-body {
-    color: $text-colour-black;
-    @include mobile-only {
-        color: $text-colour-black;
-    }
-}

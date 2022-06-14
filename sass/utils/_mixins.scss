@@ -5,7 +5,7 @@
 }
 
 @mixin heading-shadow {
-    box-shadow: 0px 3px 3px $background-colour-light;
+    box-shadow: 0px 5px 5px $background-colour-greyLight;
 }
 
 @mixin shadow {
@@ -119,7 +119,7 @@
     background-color: $tertiary-colour;
     color: darken($color:$tertiary-colour, $amount: 40%);
     text-align: center;
-    line-height: 30px;
+    line-height: 26px;
     font-weight: map-get($weight, font-weight-light);
 }
 @mixin btn-white {

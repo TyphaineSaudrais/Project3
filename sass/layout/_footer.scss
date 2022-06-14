@@ -1,6 +1,6 @@
 .footer {
     width:map-get($size, cover-width);
-    height: map-get($size, cover-height);
+    height: 10%;
     background-color: $background-colour-dark;
     &__logo {
         width: 25%;
@@ -13,6 +13,9 @@
             color: $text-colour-white;
             @include flex-row-start;
             margin: 0px 20px 0px 30px;
+            @include mobile-only {
+                height: 25px;
+            }
             &__icon {
                 margin:  10px 10px 10px 0px;
             }
@@ -24,12 +27,11 @@
                     font-size: map-get($police, police-size-hypra-small);
                 font-weight: map-get($weight, font-weight-negative);
                 }
-                &__last {
-                    margin-bottom: 40px;
-                }
             }
             
         }
-       
+        .link-last {
+            margin-bottom: 40px;
+        }
     }
 }
