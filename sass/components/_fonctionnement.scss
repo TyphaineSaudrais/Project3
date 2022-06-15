@@ -46,15 +46,16 @@
                 font-size: map-get($police,police-size-very-small);
             }
             &:hover {
-                & ::after {
+                &::after {
                     opacity: 1;
                 }
             }
             &::after {
                 @include btn-grey-change; 
             }
+            
         }
        
     }
     
-}
+}   

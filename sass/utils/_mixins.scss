@@ -125,7 +125,7 @@
     z-index: -1;
     border-radius: 20px /20px ;
     background-color: lighten($color: $primary-colour, $amount: 10%);
-    transition: opacity 250ms;
+    transition: opacity 700ms;
 }
 
 @mixin btn-green {

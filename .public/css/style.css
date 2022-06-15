@@ -685,7 +685,7 @@ body {
   margin-right: 10%;
   font-size: 16px;
 }
-.fonctionnement__btn__link:hover ::after {
+.fonctionnement__btn__link:hover::after {
   opacity: 1;
 }
 .fonctionnement__btn__link::after {
@@ -699,7 +699,7 @@ body {
   z-index: -1;
   border-radius: 20px/20px;
   background-color: #ae80e5;
-  transition: opacity 250ms;
+  transition: opacity 700ms;
 }
 
 .list-restaurant__title {
