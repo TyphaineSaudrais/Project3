@@ -669,7 +669,7 @@ body {
     font-weight: 500;
   }
 }
-.fonctionnement__btn__link__first {
+.fonctionnement__btn__link__number {
   position: absolute;
   top: 42%;
   left: -8px;
@@ -681,11 +681,26 @@ body {
   color: white;
   line-height: 20px;
 }
-.fonctionnement__btn__link__second {
+.fonctionnement__btn__link__first {
+  position: absolute;
+  top: 41%;
+  left: 21%;
   margin-right: 10%;
   font-size: 16px;
 }
+.fonctionnement__btn__link__second {
+  position: absolute;
+  top: 41%;
+  left: 21%;
+  margin-right: 10%;
+  font-size: 16px;
+  color: #9356DC;
+  opacity: 0;
+}
 .fonctionnement__btn__link:hover::after {
+  opacity: 1;
+}
+.fonctionnement__btn__link:hover .fonctionnement__btn__link__second {
   opacity: 1;
 }
 .fonctionnement__btn__link::after {
@@ -695,11 +710,6 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: 0;
-  z-index: -1;
-  border-radius: 20px/20px;
-  background-color: #ae80e5;
-  transition: opacity 700ms;
 }
 
 .list-restaurant__title {

@@ -34,19 +34,35 @@
                 font-size: map-get($police ,police-size-hypra-small);
                 font-weight:map-get($weight , font-weight-light);
             }
-            &__first {
+            &__number {
                 position: absolute;
                 top: 42%;
                 left: -8px;
                 font-size: map-get($police,police-size-mega-small);
                 @include circle-purple;     
             }
+            &__first {
+                position: absolute;
+                top: 41%;
+                left: 21%;
+                margin-right: 10%;
+                font-size: map-get($police,police-size-very-small);     
+            }
             &__second {
+                position: absolute;
+                top: 41%;
+                left: 21%;
                 margin-right: 10%;
                 font-size: map-get($police,police-size-very-small);
+                color: $primary-colour;
+                opacity: 0;
             }
+            
             &:hover {
                 &::after {
+                    opacity: 1;
+                }
+                & .fonctionnement__btn__link__second {
                     opacity: 1;
                 }
             }

@@ -121,12 +121,8 @@
     right: 0;
     bottom: 0;  
     left: 0;
-    opacity: 0;
-    z-index: -1;
-    border-radius: 20px /20px ;
-    background-color: lighten($color: $primary-colour, $amount: 10%);
-    transition: opacity 700ms;
 }
+
 
 @mixin btn-green {
     background-color: $tertiary-colour;
