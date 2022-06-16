@@ -818,6 +818,18 @@ body {
   right: 20px;
   font-size: 130%;
 }
+.restaurant__description__icon__iconRempli {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0%;
+  color: #9356DC;
+  transform-origin: 0 0;
+  transition: all 800ms;
+}
+.restaurant__description:hover .restaurant__description__icon__iconRempli {
+  font-size: 130%;
+}
 
 @media screen and (max-width: 599px) {
   .last-restaurant {

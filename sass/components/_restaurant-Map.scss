@@ -81,7 +81,21 @@
             color: $text-colour-grey;
             @include position-absolute; 
             font-size: 130%;
+            &__iconRempli {
+                @include position-absolute; 
+                font-size: 0%;
+                color: $primary-colour;
+                transform-origin: 0 0;
+                transition: all 800ms;
+            }
         }
+       
+        &:hover {
+            & .restaurant__description__icon__iconRempli {
+                font-size: 130%;
+                
+            }
+         } 
     }
 }
 .last-restaurant {
