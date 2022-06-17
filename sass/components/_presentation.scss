@@ -47,11 +47,14 @@
         }
     }
     &__btn {
-        width: map-get($size,cover-width) ; 
-        height: 50%;
         @include btn-violet;
+        transform: scale(1);
+        transition: transform 550ms;
         @include mobile-only {
             font-size: map-get($police ,police-size-hypra-small);
+        }
+        &:hover {
+            transform: scale(1.15);
         }
     }
 }
