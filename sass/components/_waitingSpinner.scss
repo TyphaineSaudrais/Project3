@@ -1,4 +1,5 @@
 .waiting {
+    z-index: -1;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -8,6 +9,8 @@
     width: map-get($size,cover-width);
     height: map-get($size,cover-height);
     background-color:$background-colour-greyLight-transp;
+    background-position: center;
+    background-attachment: scroll;
     animation: apparition 16s ease-in-out;
     &__load {
         width: 50%;
