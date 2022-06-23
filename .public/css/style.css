@@ -3,15 +3,57 @@
 /* ==========================================================*/
 /*  ======================= BTN =============================*/
 /*  =======================================================*/
-/* ==============================Global grid: Boxe Sizing & Normalize ================================ */
-/* --------BOXE SIZING ------ */
+/* ============================= Keyframes ================================== */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@keyframes bulles {
+  50% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes apparition {
+  0% {
+    opacity: 0.5;
+    z-index: 1;
+  }
+  5% {
+    opacity: 0.8;
+    z-index: 1;
+  }
+  10% {
+    opacity: 1;
+    z-index: 1;
+  }
+  70% {
+    opacity: 1;
+    z-index: 1;
+  }
+  80% {
+    opacity: 0.5;
+    z-index: 1;
+  }
+  90% {
+    opacity: 0.1;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+  }
+}
+/* ========================================================================= */
+/* ==============================Global grid: Boxe Sizing & Normalize ================================ */
+/* --------BOXE SIZING ------ */
 *, *:before, *::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -ms-box-sizing: border-box;
+  background-clip: border-box;
 }
 
 * {
@@ -455,6 +497,7 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 body {
@@ -547,6 +590,82 @@ body {
   justify-content: space-around;
   align-items: center;
   background-color: rgb(244, 244, 244);
+}
+
+.waiting {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(194, 191, 191, 0.8);
+  animation: apparition 16s ease-in-out;
+}
+.waiting__load {
+  width: 50%;
+  height: 50%;
+  background-color: #ececec;
+  border: 7px solid #15DEA5;
+  border-radius: 80px/80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  margin-top: 15%;
+}
+@media screen and (max-width: 599px) {
+  .waiting__load {
+    width: 100%;
+    height: 100%;
+  }
+}
+.waiting__load__bulle {
+  width: 8%;
+  height: 15%;
+  border-radius: 50%;
+  animation: bulles 1900ms 14s backwards 4 reverse;
+}
+.waiting__load__bulle:hover {
+  animation-play-state: paused;
+}
+.waiting__load__bulle--1 {
+  animation-delay: 200ms;
+}
+.waiting__load__bulle--2 {
+  animation-delay: 400ms;
+}
+.waiting__load__bulle--3 {
+  animation-delay: 600ms;
+}
+.waiting__load__bulle--4 {
+  animation-delay: 800ms;
+}
+.waiting__load__bulle--5 {
+  animation-delay: 1000ms;
+}
+.waiting__load__bulle--1 {
+  background: #45b0c3;
+  border: 4px dashed #45b0c3;
+}
+.waiting__load__bulle--2 {
+  background: #FF79DA;
+  border: 4px dashed #FF79DA;
+}
+.waiting__load__bulle--3 {
+  background: #99E2D0;
+  border: 4px dashed #99E2D0;
+}
+.waiting__load__bulle--4 {
+  background: #9356DC;
+  border: 4px dashed #9356DC;
+}
+.waiting__load__bulle--5 {
+  background: #0E397F;
+  border: 4px dashed #0E397F;
 }
 
 .presentation__location {
@@ -659,7 +778,7 @@ body {
   display: block;
   width: 26%;
   height: 30%;
-  z-index: 1;
+  z-index: 0;
   background-color: rgb(244, 244, 244);
   border-radius: 20px/20px;
   text-align: center;
@@ -720,6 +839,7 @@ body {
   left: 0;
   opacity: 0;
   z-index: -1;
+  box-shadow: 0px 4px 4px grey;
   border-radius: 20px/20px;
   background-color: #f2eafb;
   transition: opacity 700ms;

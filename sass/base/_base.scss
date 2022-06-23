@@ -10,6 +10,7 @@
             -moz-box-sizing: border-box;
                 box-sizing: border-box;
             -ms-box-sizing: border-box;
+            background-clip: border-box;
         }
 
         * {
@@ -483,12 +484,14 @@
             width: map-get($size, cover-width);
             margin: 0;
             padding: 0;
+            position: relative;
         }
         
         body {
             color: $text-colour-black;
             margin: 0;
             padding: 0;
+           
         }
 
         *,*:before, *::after {

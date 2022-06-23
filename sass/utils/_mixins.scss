@@ -11,7 +11,9 @@
 @mixin shadow {
     box-shadow: 0px 3px 3px $background-colour-greyLight;
 }
-
+@mixin shadow-amplify {
+    box-shadow: 0px 4px 4px $background-colour-grey;
+}
 @mixin invert-color {
     filter: invert(100%);
 }
@@ -123,6 +125,7 @@
     left: 0;
     opacity: 0;
     z-index: -1;
+    @include shadow-amplify(); 
     border-radius: 20px /20px ;
     background-color: lighten($color: $primary-colour, $amount: 35%);
     transition: opacity 700ms;
@@ -170,3 +173,55 @@
     margin-left: 10px;
     margin-top: 15px;
 }
+
+
+/* ============================= Keyframes ================================== */
+
+$animation-delay: 200ms;
+$number-bulles: 6; 
+
+@keyframes bulles {
+    50% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes apparition {
+    0% {
+        opacity: 0.5;
+        z-index:1;
+    }
+    5% {
+        opacity: 0.8;
+        z-index:1;
+    }
+    10% {
+        opacity: 1;
+        z-index:1;
+    }
+    70% {
+        opacity: 1;
+        z-index:1;
+    }
+    80% {
+        opacity: 0.5;
+        z-index:1;
+    }
+    90% {
+        opacity: 0.1;
+        z-index:1;
+    }
+    100%{
+        opacity: 0;
+        z-index:1;
+    }
+}
+
+
+
+
+
+/* ========================================================================= */
