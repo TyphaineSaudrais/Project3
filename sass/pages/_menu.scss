@@ -49,6 +49,7 @@
         width: 50%;
         margin: auto;
         height: 20%;
+        animation: menu-display 1500ms both;
         @include flex-column; 
         @include mobile-only {
             width: map-get($size, cover-width );
@@ -77,6 +78,12 @@
                 width: 97%;
                 height: 100%;
             }
+            @for $i from 1 to $number-choix {
+                &--#{$i}{
+                animation-delay: $animation-delay * $i;
+                }
+            }
+            animation: menu-display 1700ms both, choix-display 1700ms both;
             &__nom {
                 margin: 0px 0px 0px 0px;
                 margin-left: 10px; 
@@ -104,6 +111,7 @@
         width: 50%;
         margin: auto;
         height: 20%;
+        animation: menu-display 1500ms both;
         @include flex-column;
         @include mobile-only {
             width: map-get($size, cover-width );
@@ -123,6 +131,12 @@
             height: 80px;
             margin-bottom: 20px;
             position: relative;
+            @for $i from 1 to $number-choix {
+                &--#{$i}{
+                animation-delay: $animation-delay * $i;
+                }
+            }
+            animation: menu-display 1700ms both, choix-display 1700ms both;
             @include flex-column-middle;
             @include btn-white;
             @include mobile-only {
@@ -157,6 +171,7 @@
         width: 50%;
         margin: auto;
         height: 20%; 
+        animation: menu-display 1700ms both, choix-display 1700ms both;
         @include flex-column;
         @include mobile-only {
             width: map-get($size, cover-width );
@@ -175,6 +190,12 @@
             height: 80px;
             margin-bottom: 20px;
             position: relative;
+            @for $i from 1 to $number-choix {
+                &--#{$i}{
+                animation-delay: $animation-delay * $i;
+                }
+            }
+            animation: menu-display 1700ms both;
             @include btn-white; 
             @include flex-column-middle;
             @include mobile-only {
