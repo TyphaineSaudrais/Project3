@@ -17,11 +17,7 @@
 }
 @keyframes apparition {
   0% {
-    opacity: 0.5;
-    z-index: 1;
-  }
-  5% {
-    opacity: 0.8;
+    opacity: 0.7;
     z-index: 1;
   }
   10% {
@@ -636,7 +632,7 @@ body {
   background-color: rgba(194, 191, 191, 0.8);
   background-position: center;
   background-attachment: scroll;
-  animation: apparition 16s ease-in-out;
+  animation: apparition 8s ease-in-out;
 }
 .waiting__load {
   width: 50%;
@@ -653,15 +649,21 @@ body {
 }
 @media screen and (max-width: 599px) {
   .waiting__load {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 50%;
   }
 }
 .waiting__load__bulle {
   width: 8%;
   height: 15%;
   border-radius: 50%;
-  animation: bulles 1900ms 14s backwards 4 reverse;
+  animation: bulles 17ms 14s backwards 3 reverse;
+}
+@media screen and (max-width: 599px) {
+  .waiting__load__bulle {
+    width: 11%;
+    height: 12%;
+  }
 }
 .waiting__load__bulle:hover {
   animation-play-state: paused;

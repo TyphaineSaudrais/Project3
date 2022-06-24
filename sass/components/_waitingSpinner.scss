@@ -11,13 +11,13 @@
     background-color:$background-colour-greyLight-transp;
     background-position: center;
     background-attachment: scroll;
-    animation: apparition 16s ease-in-out;
+    animation: apparition 8s ease-in-out;
     &__load {
         width: 50%;
         height: 50%;
         @include mobile-only {
-            width: map-get($size,cover-width);
-            height: map-get($size,cover-height);
+            width: 90%;
+            height: 50%;
         }
         background-color: $background-colour-lightergrey;
         border: 7px solid $waiting-colour;
@@ -32,9 +32,13 @@
             width: 8%;
             height:15%;
             border-radius: 50%;
-            animation: bulles 1900ms 14s backwards 4 reverse;
+            animation: bulles 17ms 14s backwards 3 reverse;
+            @include mobile-only {
+                width: 11%;
+                height:12%;
+            }
             &:hover {
-                animation-play-state: paused;
+                animation-play-state: paused;   
             }
             @for $i from 1 to $number-bulles {
                 &--#{$i}{
