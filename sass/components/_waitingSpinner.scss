@@ -32,9 +32,9 @@
             width: 8%;
             height:15%;
             border-radius: 50%;
-            animation: bulles 17ms 14s backwards 3 reverse;
+            animation: bulles 1700ms 14s backwards 3 reverse;
             @include mobile-only {
-                width: 11%;
+                width: 10%;
                 height:12%;
             }
             &:hover {
