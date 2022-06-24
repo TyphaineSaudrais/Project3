@@ -77,6 +77,9 @@
             @include mobile-only {
                 width: 97%;
                 height: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
             @for $i from 1 to $number-choix {
                 &--#{$i}{
@@ -84,6 +87,15 @@
                 }
             }
             animation: menu-display 1700ms both, choix-display 1700ms both;
+            &:hover {
+                .menu__entrees__choix__btn {
+                    transform: scale(100%);
+                }
+                .menu__entrees__choix__prix {
+                    transform: translateX(-430%);
+                }
+            }
+
             &__nom {
                 margin: 0px 0px 0px 0px;
                 margin-left: 10px; 
@@ -103,8 +115,15 @@
                 font-weight: map-get($weight, font-weight-light);
                 position: absolute;
                 bottom: 10px;
-                right: 20px;           
+                right: 20px;     
+                transition: transform 1s;      
             }
+            &__btn {
+                @include btn-green-light;
+                 & > .fa-solid{
+                     @include btn-green-light-i;
+                 }
+             }
         }
     }
     &__plats {
@@ -137,6 +156,14 @@
                 }
             }
             animation: menu-display 1700ms both, choix-display 1700ms both;
+            &:hover {
+                .menu__plats__choix__btn {
+                    transform: scale(100%);
+                }
+                .menu__plats__choix__prix {
+                    transform: translateX(-430%);
+                }
+            }
             @include flex-column-middle;
             @include btn-white;
             @include mobile-only {
@@ -163,7 +190,14 @@
                 position: absolute;
                 bottom: 10px;
                 right: 20px;  
+                transition: transform 1s;
             }
+            &__btn {
+                @include btn-green-light;
+                 & > .fa-solid{
+                     @include btn-green-light-i;
+                 }
+             }
         }
 
     }
@@ -196,6 +230,14 @@
                 }
             }
             animation: menu-display 1700ms both, choix-display 1700ms both;
+            &:hover {
+                .menu__desserts__choix__btn {
+                    transform: scale(100%);
+                }
+                .menu__desserts__choix__prix {
+                    transform: translateX(-430%);
+                }
+            }
             @include btn-white; 
             @include flex-column-middle;
             @include mobile-only {
@@ -223,6 +265,13 @@
                 position: absolute;
                 bottom: 10px;
                 right: 20px;  
+                transition: transform 1s;
+            }
+            &__btn {
+               @include btn-green-light;
+                & > .fa-solid{
+                    @include btn-green-light-i;
+                }
             }
         }
     }
