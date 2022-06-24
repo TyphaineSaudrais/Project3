@@ -1153,6 +1153,9 @@ body {
 .menu__entrees__choix--3 {
   animation-delay: 600ms;
 }
+.menu__entrees__choix--4 {
+  animation-delay: 800ms;
+}
 .menu__entrees__choix__nom {
   margin: 0px 0px 0px 0px;
   margin-left: 10px;
@@ -1233,6 +1236,9 @@ body {
 .menu__plats__choix--3 {
   animation-delay: 600ms;
 }
+.menu__plats__choix--4 {
+  animation-delay: 800ms;
+}
 @media screen and (max-width: 599px) {
   .menu__plats__choix {
     width: 97%;
@@ -1264,7 +1270,7 @@ body {
   width: 50%;
   margin: auto;
   height: 20%;
-  animation: menu-display 1700ms both, choix-display 1700ms both;
+  animation: menu-display 1500ms both;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1299,7 +1305,7 @@ body {
   height: 80px;
   margin-bottom: 20px;
   position: relative;
-  animation: menu-display 1700ms both;
+  animation: menu-display 1700ms both, choix-display 1700ms both;
   background-color: #f7f7f7;
   border-radius: 20px/20px;
   box-shadow: 0px 3px 3px rgb(194, 191, 191);
@@ -1318,6 +1324,9 @@ body {
 }
 .menu__desserts__choix--3 {
   animation-delay: 600ms;
+}
+.menu__desserts__choix--4 {
+  animation-delay: 800ms;
 }
 @media screen and (max-width: 599px) {
   .menu__desserts__choix {
