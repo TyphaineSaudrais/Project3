@@ -1142,9 +1142,6 @@ body {
   .menu__entrees__choix {
     width: 97%;
     height: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 }
 .menu__entrees__choix--1 {
@@ -1162,8 +1159,27 @@ body {
 .menu__entrees__choix:hover .menu__entrees__choix__btn {
   transform: scale(100%);
 }
+.menu__entrees__choix:hover .menu__entrees__choix__btn .fa-solid {
+  transform: rotate(1turn);
+}
 .menu__entrees__choix:hover .menu__entrees__choix__prix {
-  transform: translateX(-430%);
+  transform: translateX(-250%);
+}
+@media screen and (max-width: 599px) {
+  .menu__entrees__choix:hover .menu__entrees__choix__description {
+    width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (max-width: 599px) {
+  .menu__entrees__choix:hover .menu__entrees__choix__nom {
+    width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 .menu__entrees__choix__nom {
   margin: 0px 0px 0px 0px;
@@ -1206,6 +1222,8 @@ body {
   filter: invert(100%);
   border-radius: 50%;
   border: 2px solid black;
+  transform: rotate(0turn);
+  transition: transform 1s ease-in-out;
 }
 .menu__plats {
   width: 50%;
@@ -1273,7 +1291,23 @@ body {
   transform: scale(100%);
 }
 .menu__plats__choix:hover .menu__plats__choix__prix {
-  transform: translateX(-430%);
+  transform: translateX(-250%);
+}
+@media screen and (max-width: 599px) {
+  .menu__plats__choix:hover .menu__plats__choix__description {
+    width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (max-width: 599px) {
+  .menu__plats__choix:hover .menu__plats__choix__nom {
+    width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 @media screen and (max-width: 599px) {
   .menu__plats__choix {
@@ -1389,7 +1423,23 @@ body {
   transform: scale(100%);
 }
 .menu__desserts__choix:hover .menu__desserts__choix__prix {
-  transform: translateX(-430%);
+  transform: translateX(-250%);
+}
+@media screen and (max-width: 599px) {
+  .menu__desserts__choix:hover .menu__desserts__choix__description {
+    width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (max-width: 599px) {
+  .menu__desserts__choix:hover .menu__desserts__choix__nom {
+    width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 @media screen and (max-width: 599px) {
   .menu__desserts__choix {

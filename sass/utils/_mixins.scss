@@ -193,6 +193,11 @@
     margin-top: 15px;
 }
 
+@mixin elipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 /* ============================= Keyframes ================================== */
 
@@ -270,7 +275,5 @@ $number-choix: 5;
     }
    
 }
-
-
 
 /* ========================================================================= */
