@@ -4,6 +4,7 @@
 /*  ======================= BTN =============================*/
 /*  =======================================================*/
 /* ============================= Keyframes ================================== */
+/* ====== spinner ====== */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @keyframes bulles {
@@ -41,6 +42,7 @@
     z-index: 1;
   }
 }
+/* ====== displaying page ====== */
 @keyframes menu-display {
   10% {
     opacity: 0;
@@ -632,7 +634,7 @@ body {
   background-color: rgba(194, 191, 191, 0.8);
   background-position: center;
   background-attachment: scroll;
-  animation: apparition 8s ease-in-out;
+  animation: apparition 3s ease-in-out;
 }
 .waiting__load {
   width: 50%;
@@ -657,7 +659,7 @@ body {
   width: 8%;
   height: 15%;
   border-radius: 50%;
-  animation: bulles 1700ms 14s backwards 3 reverse;
+  animation: bulles 1200ms 80ms backwards reverse;
 }
 @media screen and (max-width: 599px) {
   .waiting__load__bulle {
@@ -767,13 +769,13 @@ body {
   text-align: center;
   box-shadow: 0px 3px 3px rgb(194, 191, 191);
   color: white;
-  line-height: 25px;
+  line-height: 28px;
   display: block;
   padding: 10px;
   margin-bottom: 40px;
   margin-top: 20px;
-  transform: scale(1);
-  transition: transform 550ms;
+  opacity: 1;
+  transition: all 550ms ease-in-out;
 }
 @media screen and (max-width: 599px) {
   .presentation__btn {
@@ -781,7 +783,8 @@ body {
   }
 }
 .presentation__btn:hover {
-  transform: scale(1.15);
+  opacity: 0.9;
+  box-shadow: 0px 4px 4px grey;
 }
 
 .fonctionnement__title {
@@ -1537,19 +1540,24 @@ body {
   text-align: center;
   box-shadow: 0px 3px 3px rgb(194, 191, 191);
   color: white;
-  line-height: 25px;
+  line-height: 28px;
   display: block;
   padding: 10px;
   margin-bottom: 40px;
   margin-top: 20px;
   margin-left: 39%;
   margin-bottom: 30px;
+  transition: all 550ms ease-in-out;
 }
 @media screen and (max-width: 599px) {
   .menu__btn {
     margin: auto;
     margin-bottom: 30px;
   }
+}
+.menu__btn:hover {
+  opacity: 0.9;
+  box-shadow: 0px 4px 4px grey;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -48,13 +48,14 @@
     }
     &__btn {
         @include btn-violet;
-        transform: scale(1);
-        transition: transform 550ms;
+        opacity: 1;
+        transition: all 550ms ease-in-out;
         @include mobile-only {
             font-size: map-get($police ,police-size-hypra-small);
         }
         &:hover {
-            transform: scale(1.15);
+            opacity: 0.9;
+            @include shadow-amplify;
         }
     }
 }

@@ -11,7 +11,7 @@
     background-color:$background-colour-greyLight-transp;
     background-position: center;
     background-attachment: scroll;
-    animation: apparition 8s ease-in-out;
+    animation: apparition 3s ease-in-out;
     &__load {
         width: 50%;
         height: 50%;
@@ -32,7 +32,7 @@
             width: 8%;
             height:15%;
             border-radius: 50%;
-            animation: bulles 1700ms 14s backwards 3 reverse;
+            animation: bulles 1200ms 80ms backwards reverse;
             @include mobile-only {
                 width: 10%;
                 height:12%;
