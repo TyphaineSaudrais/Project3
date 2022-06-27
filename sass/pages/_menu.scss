@@ -359,5 +359,10 @@
             opacity: 0.9;
             @include shadow-amplify;
         }
+        &__rempli {
+            @include position-absolute-inherit;
+            opacity: 0;
+            transition: opacity 200ms;
+        }
     }
 }

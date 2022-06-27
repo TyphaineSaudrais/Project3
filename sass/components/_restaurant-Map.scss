@@ -89,8 +89,10 @@
                 @include position-absolute; 
                 font-size: 150%;
                 transform: scale(0);
-                color: $primary-colour;
+                background: linear-gradient(to bottom right, $secondary-colour, $primary-colour);
                 transition: transform 1000ms;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
                 
             } 
         }
