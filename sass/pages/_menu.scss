@@ -93,22 +93,36 @@
                 }
                 .menu__entrees__choix__prix {
                     transform: translateX(-430%);
+                    @include mid-screen {
+                        transform: translateX(-300%);
+                    }
                     @include mobile-only {
+                        transform: translateX(-360%);
+                    }
+                    @include small-mobile {
                         transform: translateX(-250%);
                     }
                     
                 }
                 .menu__entrees__choix__description {
-                    @include mobile-only {
+                    width: 70%; 
+                    @include elipsis;
+                    @include mid-screen {
                         width: 60%;
-                        @include elipsis;
+                    }
+                    @include mobile-only {
+                        width: 50%;
+                    }
+                    @include small-mobile {
+
                     }
                     
                 }
                 .menu__entrees__choix__nom {
+                    width: 70%; 
+                    @include elipsis;
                     @include mobile-only {
                         width: 60%;
-                        @include elipsis;
                     }
                     
                 }
@@ -192,15 +206,17 @@
                     }
                 }
                 .menu__plats__choix__description {
+                    width: 70%; 
+                    @include elipsis;
                     @include mobile-only {
                         width: 60%;
-                        @include elipsis;
-                    }  
+                    }
                 }
                 .menu__plats__choix__nom {
+                    width: 70%; 
+                    @include elipsis;
                     @include mobile-only {
                         width: 60%;
-                        @include elipsis;
                     }
                     
                 }
@@ -291,16 +307,18 @@
                     }
                 }
                 .menu__desserts__choix__description {
+                    width: 70%; 
+                    @include elipsis;
                     @include mobile-only {
                         width: 60%;
-                        @include elipsis;
                     }
                     
                 }
                 .menu__desserts__choix__nom {
+                    width: 70%; 
+                    @include elipsis;
                     @include mobile-only {
                         width: 60%;
-                        @include elipsis;
                     }
                     
                 }

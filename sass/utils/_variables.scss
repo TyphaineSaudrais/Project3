@@ -27,5 +27,6 @@ $weight: (font-weight-negative: 300, font-weight-light: 500, font-weight-medium:
 $size: (cover-width: 100%, cover-height: 100%);
 $padding: (padding-xs: 5px, padding-s: 10px, padding-m: 15px,padding-l: 20px, padding-xl: 25px);
 
-$breakpoints: (mobile: 599px);
+$breakpoints: (small-mobile: 375px, mobile: 600px, mid-screen: 1000px);
+
 
