@@ -633,8 +633,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(194, 191, 191, 0.8);
-  background-position: center;
-  background-attachment: fixed;
+  position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   animation: apparition 3s ease-in-out;
@@ -1216,12 +1215,20 @@ body {
   }
 }
 .menu__entrees__choix__nom {
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 0px 0px 0px 0px;
   margin-left: 10px;
   font-size: 16px;
   font-weight: 500;
 }
 .menu__entrees__choix__description {
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 0px 0px 0px 0px;
   margin-left: 10px;
   font-size: 14px;

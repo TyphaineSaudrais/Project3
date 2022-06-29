@@ -129,12 +129,16 @@
             }
 
             &__nom {
+                width: 70%; 
+                @include elipsis;
                 margin: 0px 0px 0px 0px;
                 margin-left: 10px; 
                 font-size: map-get($police, police-size-very-small);
                 font-weight: map-get($weight, font-weight-light);
             }
             &__description {
+                width: 70%; 
+                @include elipsis;
                 margin: 0px 0px 0px 0px;
                 margin-left: 10px; 
                 font-size: map-get($police, police-size-hypra-small);
