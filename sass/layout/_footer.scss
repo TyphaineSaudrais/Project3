@@ -25,12 +25,12 @@
                 font-weight: map-get($weight, font-weight-light);
                 @include mobile-only {
                     font-size: map-get($police, police-size-hypra-small);
-                font-weight: map-get($weight, font-weight-negative);
+                    font-weight: map-get($weight, font-weight-negative);
                 }
             }
             
         }
-        .link-last {
+        & > .link-last {
             margin-bottom: 40px;
         }
     }

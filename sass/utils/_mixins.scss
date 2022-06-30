@@ -19,6 +19,7 @@
         @content
     }
 }
+ /* ============================ shadows ====================================== */
 
 @mixin heading-shadow {
     box-shadow: 0px 5px 5px $background-colour-greyLight;
@@ -30,10 +31,15 @@
 @mixin shadow-amplify {
     box-shadow: 0px 4px 4px $background-colour-grey;
 }
+
+
+/* ===================================== invert color ================================== */ 
 @mixin invert-color {
     filter: invert(100%);
 }
 
+
+/* ============================ flex set up ====================================== */
 @mixin flex-row-start {
     display: flex;
     flex-direction: row;
@@ -90,7 +96,7 @@
     
 }
 
-/* ==========================================================*/
+/* =========================   absolute  =================================*/
 
 @mixin position-absolute {
     position: absolute;
@@ -105,6 +111,8 @@
     bottom: 0;  
     left: 0;
 }
+
+/* ============================ border ====================================== */
 @mixin border-green {
     content: "";
             width: 50px;
@@ -207,17 +215,99 @@
  }
 
 
-/*  =======================================================*/
+/*  =========================  specific part styling ==============================*/
+/*  =========================  Page related ==============================*/
+@mixin Head-title-menu-styling {
+    width: 100%;
+    height: 7%;
+    margin: auto;
+    padding: 30px 5px 0px 10px;
+    border-radius: 40px 40px 0px 0px;
+    position: absolute ;
+    top: 400px; 
+    background-color: $background-colour-lightergrey;
+    text-align: center;
+}
+
 
 @mixin Title-menu-styling {
-    width: 100%;
+    width: 90%;
     position: relative;
     text-transform: uppercase; 
     font-size: map-get($police, police-size-hypra-small);
     font-weight: map-get($weight , font-weight-negative) ;
     margin-left: 10px;
-    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
+
+@mixin section-menu-styling {
+    width: 50%;
+    margin: auto;
+    height: 20%;
+    animation: menu-display 1500ms both;
+    @include flex-column; 
+}
+
+@mixin Choix-menu-styling {
+    display: block;
+    width: 90%;
+    height: 80px;
+    margin-bottom: 20px;
+    position: relative;
+    @include flex-column-middle;
+    @include btn-white;
+    animation: menu-display 1700ms both, choix-display 1700ms both;
+}
+
+@mixin Nom-menu-styling {
+    width: 70%; 
+    @include elipsis;
+    margin: 0px 0px 0px 0px;
+    margin-left: 10px; 
+    font-size: map-get($police, police-size-very-small);
+    font-weight: map-get($weight, font-weight-light);
+}
+
+@mixin Description-menu-styling {
+    width: 70%; 
+    @include elipsis;
+    margin: 0px 0px 0px 0px;
+    margin-left: 10px; 
+    font-size: map-get($police, police-size-hypra-small);
+    font-weight: map-get($weight, font-weight-negative);
+}
+
+@mixin Prix-menu-styling {
+    margin: 0px 0px 0px 0px;
+    margin-left: 10px; 
+    font-size: map-get($police, police-size-very-small);
+    font-weight: map-get($weight, font-weight-light);
+    position: absolute;
+    bottom: 10px;
+    right: 20px;     
+    transition: transform 500ms ease-out;      
+}
+
+/* =========  phone ======= */
+
+@mixin Head-title-menu-styling-phone {
+    width: map-get($size, cover-width);
+    height: 5%;
+    text-align: center;
+    font-size: map-get($police, police-size-medium);
+    top: 160px; 
+    text-align: start;
+    border-radius: 30px 30px 0px 0px;
+}
+
+@mixin I-menu-styling-phone {
+    margin-left: 50px;
+    font-size: map-get($police, police-size-small);
+    font-weight: map-get($weight , font-weight-negative) ;
+    color: $background-colour-dark;
+}
+/* ============================ Elipsis ====================================== */
 
 @mixin elipsis {
     white-space: nowrap;
