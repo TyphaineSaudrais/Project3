@@ -9,6 +9,7 @@
 /*  ======================= BTN =============================*/
 /*  =========================  specific part styling ==============================*/
 /*  =========================  Page related ==============================*/
+/* ==== Mid-Screen ===== */
 /* =========  phone ======= */
 /* ============================ Elipsis ====================================== */
 /* ============================= Keyframes ================================== */
@@ -530,14 +531,14 @@ template {
 }
 
 html {
-  height: 100%;
-  width: 100%;
   margin: 0;
   padding: 0;
   position: relative;
 }
 
 body {
+  height: 100%;
+  width: 100%;
   color: black;
   margin: 0;
   padding: 0;
@@ -1105,9 +1106,9 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .menu__entrees {
-    width: 100%;
+    width: 95%;
     height: 100%;
   }
 }
@@ -1151,10 +1152,17 @@ body {
   margin-left: 10px;
   animation: menu-display 1700ms both, choix-display 1700ms both;
 }
+@media screen and (max-width: 1000px) {
+  .menu__entrees__choix {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
 @media screen and (max-width: 600px) {
   .menu__entrees__choix {
     width: 97%;
-    height: 100%;
   }
 }
 .menu__entrees__choix--1 {
@@ -1176,11 +1184,11 @@ body {
   transform: rotate(1turn);
 }
 .menu__entrees__choix:hover .menu__entrees__choix__prix {
-  transform: translateX(-430%);
+  transform: translateX(-400%);
 }
 @media screen and (max-width: 1000px) {
   .menu__entrees__choix:hover .menu__entrees__choix__prix {
-    transform: translateX(-300%);
+    transform: translateX(-470%);
   }
 }
 @media screen and (max-width: 600px) {
@@ -1193,29 +1201,12 @@ body {
     transform: translateX(-250%);
   }
 }
-.menu__entrees__choix:hover .menu__entrees__choix__description {
-  width: 70%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 @media screen and (max-width: 1000px) {
   .menu__entrees__choix:hover .menu__entrees__choix__description {
     width: 60%;
   }
 }
-@media screen and (max-width: 600px) {
-  .menu__entrees__choix:hover .menu__entrees__choix__description {
-    width: 50%;
-  }
-}
-.menu__entrees__choix:hover .menu__entrees__choix__nom {
-  width: 70%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .menu__entrees__choix:hover .menu__entrees__choix__nom {
     width: 60%;
   }
@@ -1230,6 +1221,12 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
+@media screen and (max-width: 600px) {
+  .menu__entrees__choix__nom {
+    width: 80%;
+    font-size: 13px;
+  }
+}
 .menu__entrees__choix__description {
   width: 70%;
   white-space: nowrap;
@@ -1239,6 +1236,12 @@ body {
   margin-left: 10px;
   font-size: 14px;
   font-weight: 300;
+}
+@media screen and (max-width: 600px) {
+  .menu__entrees__choix__description {
+    width: 80%;
+    font-size: 13px;
+  }
 }
 .menu__entrees__choix__prix {
   margin: 0px 0px 0px 0px;
@@ -1286,9 +1289,9 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .menu__plats {
-    width: 100%;
+    width: 95%;
     height: 100%;
   }
 }
@@ -1327,10 +1330,17 @@ body {
   margin-left: 10px;
   animation: menu-display 1700ms both, choix-display 1700ms both;
 }
+@media screen and (max-width: 1000px) {
+  .menu__plats__choix {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
 @media screen and (max-width: 600px) {
   .menu__plats__choix {
     width: 97%;
-    height: 100%;
   }
 }
 .menu__plats__choix--1 {
@@ -1352,31 +1362,29 @@ body {
   transform: rotate(1turn);
 }
 .menu__plats__choix:hover .menu__plats__choix__prix {
-  transform: translateX(-430%);
+  transform: translateX(-400%);
+}
+@media screen and (max-width: 1000px) {
+  .menu__plats__choix:hover .menu__plats__choix__prix {
+    transform: translateX(-470%);
+  }
 }
 @media screen and (max-width: 600px) {
+  .menu__plats__choix:hover .menu__plats__choix__prix {
+    transform: translateX(-360%);
+  }
+}
+@media screen and (max-width: 375px) {
   .menu__plats__choix:hover .menu__plats__choix__prix {
     transform: translateX(-250%);
   }
 }
-.menu__plats__choix:hover .menu__plats__choix__description {
-  width: 70%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .menu__plats__choix:hover .menu__plats__choix__description {
     width: 60%;
   }
 }
-.menu__plats__choix:hover .menu__plats__choix__nom {
-  width: 70%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .menu__plats__choix:hover .menu__plats__choix__nom {
     width: 60%;
   }
@@ -1391,6 +1399,12 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
+@media screen and (max-width: 600px) {
+  .menu__plats__choix__nom {
+    width: 80%;
+    font-size: 13px;
+  }
+}
 .menu__plats__choix__description {
   width: 70%;
   white-space: nowrap;
@@ -1400,6 +1414,12 @@ body {
   margin-left: 10px;
   font-size: 14px;
   font-weight: 300;
+}
+@media screen and (max-width: 600px) {
+  .menu__plats__choix__description {
+    width: 80%;
+    font-size: 13px;
+  }
 }
 .menu__plats__choix__prix {
   margin: 0px 0px 0px 0px;
@@ -1447,9 +1467,9 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .menu__desserts {
-    width: 100%;
+    width: 95%;
     height: 100%;
   }
 }
@@ -1488,10 +1508,17 @@ body {
   margin-left: 10px;
   animation: menu-display 1700ms both, choix-display 1700ms both;
 }
+@media screen and (max-width: 1000px) {
+  .menu__desserts__choix {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
 @media screen and (max-width: 600px) {
   .menu__desserts__choix {
     width: 97%;
-    height: 100%;
   }
 }
 .menu__desserts__choix--1 {
@@ -1513,31 +1540,29 @@ body {
   transform: rotate(1turn);
 }
 .menu__desserts__choix:hover .menu__desserts__choix__prix {
-  transform: translateX(-430%);
+  transform: translateX(-400%);
+}
+@media screen and (max-width: 1000px) {
+  .menu__desserts__choix:hover .menu__desserts__choix__prix {
+    transform: translateX(-470%);
+  }
 }
 @media screen and (max-width: 600px) {
+  .menu__desserts__choix:hover .menu__desserts__choix__prix {
+    transform: translateX(-360%);
+  }
+}
+@media screen and (max-width: 375px) {
   .menu__desserts__choix:hover .menu__desserts__choix__prix {
     transform: translateX(-250%);
   }
 }
-.menu__desserts__choix:hover .menu__desserts__choix__description {
-  width: 70%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .menu__desserts__choix:hover .menu__desserts__choix__description {
     width: 60%;
   }
 }
-.menu__desserts__choix:hover .menu__desserts__choix__nom {
-  width: 70%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .menu__desserts__choix:hover .menu__desserts__choix__nom {
     width: 60%;
   }
@@ -1552,6 +1577,12 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
+@media screen and (max-width: 600px) {
+  .menu__desserts__choix__nom {
+    width: 80%;
+    font-size: 13px;
+  }
+}
 .menu__desserts__choix__description {
   width: 70%;
   white-space: nowrap;
@@ -1561,6 +1592,12 @@ body {
   margin-left: 10px;
   font-size: 14px;
   font-weight: 300;
+}
+@media screen and (max-width: 600px) {
+  .menu__desserts__choix__description {
+    width: 80%;
+    font-size: 13px;
+  }
 }
 .menu__desserts__choix__prix {
   margin: 0px 0px 0px 0px;

@@ -289,6 +289,21 @@
     transition: transform 500ms ease-out;      
 }
 
+/* ==== Mid-Screen ===== */
+
+@mixin MidScreen-section-styling {
+    width: 95%;
+    height: 100%;
+}
+
+@mixin MidScreen-Choix-menu-styling {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
 /* =========  phone ======= */
 
 @mixin Head-title-menu-styling-phone {
@@ -307,6 +322,21 @@
     font-weight: map-get($weight , font-weight-negative) ;
     color: $background-colour-dark;
 }
+
+@mixin mobile-Choix-menu-styling {
+    width: 97%;
+}
+
+@mixin mobile-Nom-menu-styling {
+    width: 80%;
+    font-size: map-get($police, police-size-hyypra-small);
+}
+
+@mixin mobile-Description-menu-styling {
+    width: 80%;
+    font-size: map-get($police, police-size-hyypra-small);
+}
+
 /* ============================ Elipsis ====================================== */
 
 @mixin elipsis {

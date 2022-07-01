@@ -29,9 +29,8 @@
     }
     &__entrees {
         @include section-menu-styling;
-        @include mobile-only {
-            width: map-get($size, cover-width );
-            height: 100%;
+        @include mid-screen {
+            @include MidScreen-section-styling;
         }
         &__title{
            @include Title-menu-styling;
@@ -44,9 +43,11 @@
         }
         &__choix {
             @include Choix-menu-styling;
+            @include mid-screen {
+               @include MidScreen-Choix-menu-styling;
+            }
             @include mobile-only {
-                width: 97%;
-                height: 100%;
+                @include mobile-Choix-menu-styling;
             }
             @for $i from 1 to $number-choix {
                 &--#{$i}{
@@ -61,9 +62,9 @@
                     }
                 }
                 .menu__entrees__choix__prix {
-                    transform: translateX(-430%);
+                    transform: translateX(-400%);
                     @include mid-screen {
-                        transform: translateX(-300%);
+                        transform: translateX(-470%);
                     }
                     @include mobile-only {
                         transform: translateX(-360%);
@@ -74,23 +75,14 @@
                     
                 }
                 .menu__entrees__choix__description {
-                    width: 70%; 
-                    @include elipsis;
                     @include mid-screen {
                         width: 60%;
                     }
-                    @include mobile-only {
-                        width: 50%;
-                    }
-                    @include small-mobile {
-
-                    }
+                    
                     
                 }
                 .menu__entrees__choix__nom {
-                    width: 70%; 
-                    @include elipsis;
-                    @include mobile-only {
+                    @include mid-screen {
                         width: 60%;
                     }
                     
@@ -99,9 +91,17 @@
 
             &__nom {
                @include Nom-menu-styling;
+               @include mobile-only {
+                @include mobile-Description-menu-styling;
+            }
+            
             }
             &__description {
                @include Description-menu-styling;
+               @include mobile-only {
+                @include mobile-Description-menu-styling;
+            }
+            
             }
             &__prix {
                 @include Prix-menu-styling;
@@ -120,9 +120,8 @@
     }
     &__plats {
         @include section-menu-styling;
-        @include mobile-only {
-            width: map-get($size, cover-width );
-            height: 100%;
+        @include mid-screen {
+            @include MidScreen-section-styling;
         }
         &__title{
             @include Title-menu-styling;
@@ -133,9 +132,11 @@
         }
         &__choix {
             @include Choix-menu-styling;
+            @include mid-screen {
+                @include MidScreen-Choix-menu-styling;
+             }
             @include mobile-only {
-                width: 97%;
-                height: 100%;
+                @include mobile-Choix-menu-styling;
             }
             @for $i from 1 to $number-choix {
                 &--#{$i}{
@@ -151,22 +152,26 @@
                     }
                 }
                 .menu__plats__choix__prix {
-                    transform: translateX(-430%);
+                    transform: translateX(-400%);
+                    @include mid-screen {
+                        transform: translateX(-470%);
+                    }
                     @include mobile-only {
+                        transform: translateX(-360%);
+                    }
+                    @include small-mobile {
                         transform: translateX(-250%);
                     }
                 }
                 .menu__plats__choix__description {
-                    width: 70%; 
-                    @include elipsis;
-                    @include mobile-only {
+                    @include mid-screen {
                         width: 60%;
                     }
+                    
+                    
                 }
                 .menu__plats__choix__nom {
-                    width: 70%; 
-                    @include elipsis;
-                    @include mobile-only {
+                    @include mid-screen {
                         width: 60%;
                     }
                     
@@ -174,11 +179,18 @@
             }
            
             &__nom {
-                @include Nom-menu-styling;
+               @include Nom-menu-styling;
+               @include mobile-only {
+                @include mobile-Description-menu-styling;
+            }
+            
             }
             &__description {
-                @include Description-menu-styling;
-                
+               @include Description-menu-styling;
+               @include mobile-only {
+                @include mobile-Description-menu-styling;
+            }
+            
             }
             &__prix {
                 @include Prix-menu-styling;
@@ -198,9 +210,8 @@
     }
     &__desserts {
         @include section-menu-styling;
-        @include mobile-only {
-            width: map-get($size, cover-width );
-            height: 100%;
+        @include mid-screen {
+            @include MidScreen-section-styling;
         }
         &__title{
             @include Title-menu-styling;
@@ -210,9 +221,11 @@
         }
         &__choix {
             @include Choix-menu-styling;
+            @include mid-screen {
+                @include MidScreen-Choix-menu-styling;
+             }
             @include mobile-only {
-                width: 97%;
-                height: 100%;
+                @include mobile-Choix-menu-styling;
             }
             @for $i from 1 to $number-choix {
                 &--#{$i}{
@@ -227,23 +240,26 @@
                     }
                 }
                 .menu__desserts__choix__prix {
-                    transform: translateX(-430%);
+                    transform: translateX(-400%);
+                    @include mid-screen {
+                        transform: translateX(-470%);
+                    }
                     @include mobile-only {
+                        transform: translateX(-360%);
+                    }
+                    @include small-mobile {
                         transform: translateX(-250%);
                     }
                 }
                 .menu__desserts__choix__description {
-                    width: 70%; 
-                    @include elipsis;
-                    @include mobile-only {
+                    @include mid-screen {
                         width: 60%;
                     }
                     
+                    
                 }
                 .menu__desserts__choix__nom {
-                    width: 70%; 
-                    @include elipsis;
-                    @include mobile-only {
+                    @include mid-screen {
                         width: 60%;
                     }
                     
@@ -251,10 +267,18 @@
             }
 
             &__nom {
-                @include Nom-menu-styling;
+               @include Nom-menu-styling;
+               @include mobile-only {
+                @include mobile-Description-menu-styling;
+            }
+            
             }
             &__description {
-                @include Description-menu-styling;
+               @include Description-menu-styling;
+               @include mobile-only {
+                @include mobile-Description-menu-styling;
+            }
+            
             }
             &__prix {
                 @include Prix-menu-styling;

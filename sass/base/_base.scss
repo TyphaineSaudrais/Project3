@@ -480,14 +480,14 @@
 
         
         html {
-            height: map-get($size, cover-height);
-            width: map-get($size, cover-width);
             margin: 0;
             padding: 0;
             position: relative;
         }
         
         body {
+            height: map-get($size, cover-height);
+            width: map-get($size, cover-width);
             color: $text-colour-black;
             margin: 0;
             padding: 0;
