@@ -3,7 +3,7 @@
     height: 10%;
     background-color: $background-colour-dark;
     &__logo {
-        width: 25%;
+        width: 30%;
         height: 25%;
         margin: 30px 20px 10px 30px;
         @include invert-color;
@@ -23,7 +23,15 @@
                 margin:  10px 10px 10px 0px;
                 font-size: map-get($police, police-size-small);
                 font-weight: map-get($weight, font-weight-light);
+                @include mid-screen {
+                    font-size: map-get($police, police-size-very-small);
+                    font-weight: map-get($weight, font-weight-light);
+                }
                 @include mobile-only {
+                    font-size: map-get($police, police-size-very-small);
+                    font-weight: map-get($weight, font-weight-negative);
+                }
+                @include small-mobile {
                     font-size: map-get($police, police-size-hypra-small);
                     font-weight: map-get($weight, font-weight-negative);
                 }

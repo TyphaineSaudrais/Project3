@@ -569,7 +569,7 @@ body {
   background-color: rgb(54, 52, 52);
 }
 .footer__logo {
-  width: 25%;
+  width: 30%;
   height: 25%;
   margin: 30px 20px 10px 30px;
   filter: invert(100%);
@@ -595,7 +595,19 @@ body {
   font-size: 20px;
   font-weight: 500;
 }
+@media screen and (max-width: 1000px) {
+  .footer__nav__link__paragraph {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
 @media screen and (max-width: 600px) {
+  .footer__nav__link__paragraph {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 375px) {
   .footer__nav__link__paragraph {
     font-size: 14px;
     font-weight: 300;
