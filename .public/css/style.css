@@ -757,6 +757,11 @@ body {
   font-weight: 600;
   text-align: center;
 }
+@media screen and (max-width: 1000px) {
+  .presentation__accroche {
+    font-size: 23px;
+  }
+}
 @media screen and (max-width: 600px) {
   .presentation__accroche {
     font-size: 20px;
@@ -773,6 +778,11 @@ body {
   font-weight: 300;
   color: rgb(72, 70, 70);
   text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  .presentation__description {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 600px) {
   .presentation__description {

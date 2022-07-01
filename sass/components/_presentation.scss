@@ -25,6 +25,9 @@
         font-size: map-get($police ,police-size-medium);
         font-weight:map-get($weight , font-weight-medium) ;
         text-align: center;
+        @include mid-screen {
+            font-size: map-get($police ,police-mid-medium);
+        }
         @include mobile-only {
             font-size: map-get($police ,police-size-small);
             margin: 30px 40px 5px 40px;
@@ -40,6 +43,10 @@
         font-weight:map-get($weight , font-weight-negative) ;
         color: $text-colour-greyDark;
         text-align: center;
+        @include mid-screen {
+            font-size: map-get($police ,police-size-mid-small);
+    
+        }
         @include mobile-only {
             font-size: map-get($police ,police-size-very-small);
             margin: 20px 40px 5px 40px;
