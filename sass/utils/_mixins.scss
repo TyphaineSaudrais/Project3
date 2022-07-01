@@ -170,6 +170,7 @@
     text-align: center;
     line-height: 26px;
     font-weight: map-get($weight, font-weight-light);
+    font-size: map-get($police, police-size-very-small);
 }
 
 

@@ -603,14 +603,12 @@ body {
 }
 @media screen and (max-width: 600px) {
   .footer__nav__link__paragraph {
-    font-size: 16px;
     font-weight: 300;
   }
 }
 @media screen and (max-width: 375px) {
   .footer__nav__link__paragraph {
     font-size: 14px;
-    font-weight: 300;
   }
 }
 .footer__nav > .link-last {
@@ -957,6 +955,14 @@ body {
   text-align: center;
   line-height: 26px;
   font-weight: 500;
+  font-size: 16px;
+}
+@media screen and (max-width: 1000px) {
+  .restaurant__btn {
+    width: 15%;
+    height: 10%;
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 600px) {
   .restaurant__btn {
@@ -982,6 +988,12 @@ body {
   height: 50%;
   margin: 5px 20px 0px 20px;
 }
+@media screen and (max-width: 1000px) {
+  .restaurant__description__title {
+    font-size: 18px;
+    line-height: 35px;
+  }
+}
 @media screen and (max-width: 600px) {
   .restaurant__description__title {
     font-size: 16px;
@@ -993,6 +1005,12 @@ body {
   font-weight: 300;
   height: 50%;
   margin: 0px 20px 0px 20px;
+}
+@media screen and (max-width: 1000px) {
+  .restaurant__description__paragraph {
+    font-size: 16px;
+    line-height: 35px;
+  }
 }
 @media screen and (max-width: 600px) {
   .restaurant__description__paragraph {

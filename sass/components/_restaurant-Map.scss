@@ -43,6 +43,11 @@
         top: 5%;
         right: 3%;
         @include btn-green;
+        @include mid-screen {
+            width: 15%;
+            height: 10%;
+            font-size: map-get($police, police-size-below-very-small);
+        }
         @include mobile-only {
             width: 21%;
             height: 12%;
@@ -50,7 +55,7 @@
         }
     }
     &__description {
-        width: 100%;
+        width: map-get($size, cover-width);
         height: 70px;
         background-color: $background-colour-white ;
         color: $text-colour-black;
@@ -62,6 +67,10 @@
             font-weight: map-get($weight ,font-weight-medium);
             height: 50%;
             margin: 5px 20px 0px 20px;
+            @include mid-screen {
+                font-size: map-get($police, police-size-mid-small);
+                line-height: 35px;            
+            }
             @include mobile-only {
                 font-size: map-get($police, police-size-very-small);
                 line-height: 35px;            
@@ -72,6 +81,10 @@
             font-weight: map-get($weight ,font-weight-negative);
             height: 50%;
             margin: 0px 20px 0px 20px;
+            @include mid-screen {
+                font-size: map-get($police, police-size-very-small);
+                line-height: 35px;            
+            }
             @include mobile-only {
                 font-size: map-get($police, police-size-hypra-small);
                 line-height: 10px;  
