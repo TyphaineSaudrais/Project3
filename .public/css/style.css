@@ -1081,6 +1081,10 @@ body {
   font-weight: 900;
   font-size: 26px;
 }
+.headerpage__iconlink:visited {
+  color: black;
+  text-decoration: none;
+}
 @media screen and (max-width: 600px) {
   .headerpage__iconlink {
     font-size: 20px;
