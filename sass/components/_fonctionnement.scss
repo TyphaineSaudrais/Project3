@@ -22,7 +22,7 @@
         align-items: center;
         &__link {
             display: block;
-            width: 26%;
+            width: 60%;
             height: 30%;
             z-index: 0;
             @include btn-grey;
@@ -42,6 +42,7 @@
                 @include circle-purple;     
             }
             &__first {
+                display: block;
                 position: absolute;
                 top: 41%;
                 left: 21%;
