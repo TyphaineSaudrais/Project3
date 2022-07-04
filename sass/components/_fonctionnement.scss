@@ -46,16 +46,12 @@
             }
             &__first {
                 display: block;
-                position: absolute;
-                top: 41%;
-                left: 21%;
+                @include position-absolute-percent;
                 margin-right: 10%;
                 font-size: map-get($police,police-size-very-small);     
             }
             &__second {
-                position: absolute;
-                top: 41%;
-                left: 21%;
+                @include position-absolute-percent;
                 margin-right: 10%;
                 font-size: map-get($police,police-size-very-small);
                 color: $primary-colour;

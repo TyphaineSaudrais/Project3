@@ -112,6 +112,12 @@
     left: 0;
 }
 
+@mixin position-absolute-percent {
+    position: absolute;
+    top: 41%;
+    left: 21%;
+}
+
 /* ============================ border ====================================== */
 @mixin border-green {
     content: "";
@@ -150,11 +156,7 @@
 }
 @mixin btn-grey-change {
     content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;  
-    left: 0;
+    @include position-absolute-inherit();
     opacity: 0;
     z-index: -1;
     @include shadow-amplify(); 
