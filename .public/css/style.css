@@ -669,10 +669,22 @@ body {
   margin: auto;
   margin-top: 15%;
 }
+@media screen and (max-width: 1000px) {
+  .waiting__load {
+    width: 70%;
+    height: 55%;
+  }
+}
 @media screen and (max-width: 600px) {
   .waiting__load {
     width: 90%;
-    height: 50%;
+    height: 70%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .waiting__load {
+    width: 90%;
+    height: 45%;
   }
 }
 .waiting__load__bulle {
@@ -828,6 +840,11 @@ body {
   margin-top: 30px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1000px) {
+  .fonctionnement__title {
+    font-size: 23px;
+  }
+}
 @media screen and (max-width: 600px) {
   .fonctionnement__title {
     font-size: 20px;
@@ -925,6 +942,11 @@ body {
   padding: 10px;
   font-size: 26px;
   font-weight: 600;
+}
+@media screen and (max-width: 1000px) {
+  .list-restaurant__title {
+    font-size: 23px;
+  }
 }
 @media screen and (max-width: 600px) {
   .list-restaurant__title {
@@ -1105,13 +1127,13 @@ body {
 }
 @media screen and (max-width: 600px) {
   .menu__img {
-    width: 100%;
     height: 200px;
   }
 }
 .menu__title {
   width: 100%;
   height: 7%;
+  font-size: 30px;
   margin: auto;
   padding: 30px 5px 0px 10px;
   border-radius: 40px 40px 0px 0px;
@@ -1124,11 +1146,11 @@ body {
   .menu__title {
     width: 100%;
     height: 5%;
-    text-align: center;
     font-size: 26px;
     top: 160px;
     text-align: start;
     border-radius: 30px 30px 0px 0px;
+    padding-left: 19px;
   }
 }
 .menu__title i {

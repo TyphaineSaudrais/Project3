@@ -8,7 +8,6 @@
         height: 500px;
         object-fit: cover;
         @include mobile-only {
-            width: map-get($size, cover-width );
             height: 200px;
         }
         

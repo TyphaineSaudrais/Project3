@@ -221,6 +221,7 @@
 @mixin Head-title-menu-styling {
     width: 100%;
     height: 7%;
+    font-size: map-get($police, police-size-large);
     margin: auto;
     padding: 30px 5px 0px 10px;
     border-radius: 40px 40px 0px 0px;
@@ -303,18 +304,20 @@
     margin: auto;
     margin-bottom: 20px;
 }
-
+@mixin Mid-Head-title-menu-styling {
+    font-size: map-get($police, police-size-consequent);
+}
 
 /* =========  phone ======= */
 
 @mixin Head-title-menu-styling-phone {
     width: map-get($size, cover-width);
     height: 5%;
-    text-align: center;
     font-size: map-get($police, police-size-medium);
     top: 160px; 
     text-align: start;
     border-radius: 30px 30px 0px 0px;
+    padding-left: 19px;
 }
 
 @mixin I-menu-styling-phone {

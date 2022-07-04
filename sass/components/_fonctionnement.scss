@@ -9,6 +9,9 @@
         margin: auto;
         margin-top: 30px;
         margin-bottom: 20px;
+        @include mid-screen {
+            font-size: map-get($police ,police-mid-medium);
+        }
         @include mobile-only {
             font-size: map-get($police ,police-size-small);
             margin: 30px 20px 15px 10px;

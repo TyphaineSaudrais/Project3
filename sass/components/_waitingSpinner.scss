@@ -16,9 +16,17 @@
     &__load {
         width: 50%;
         height: 50%;
+        @include mid-screen {
+            width: 70%;
+            height: 55%;
+        }
         @include mobile-only {
             width: 90%;
-            height: 50%;
+            height: 70%;
+        }
+        @include small-mobile {
+            width: 90%;
+            height: 45%;
         }
         background-color: $background-colour-lightergrey;
         border: 7px solid $waiting-colour;
