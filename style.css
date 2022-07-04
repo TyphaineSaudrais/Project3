@@ -749,7 +749,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  background-color: blue;
+  background-color: rgb(230, 227, 227);
 }
 .presentation__location__icon {
   margin: 15px 5px 15px 5px;
