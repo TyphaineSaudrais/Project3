@@ -3,7 +3,7 @@
         width: map-get($size, cover-width);
         height: 20%;
         @include flex-row-center;
-        background-color: $background-colour-light;
+        background-color: blue;
         &__icon {
             margin: 15px 5px 15px 5px; 
             color: $text-colour-greyDark;    
