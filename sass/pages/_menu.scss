@@ -108,11 +108,15 @@
             &__btn {
                 @include btn-green-light;
                  & > .fa-solid{
-                    @include btn-green-light-i;
-                    font-size: 150%;
-                    @include mobile-only {
-                     font-size: 100%;
-                    }
+                     @include btn-green-light-i;
+                     font-size: 150%;
+                     @include mid-screen {
+                         @include btn-green-light-i-mid-screen;
+                     }
+                     @include mobile-only {
+                      font-size: 100%;
+                      @include btn-green-light-i-phone;
+                     }
                  }
              }
         }
@@ -197,11 +201,15 @@
             &__btn {
                 @include btn-green-light;
                  & > .fa-solid{
-                    @include btn-green-light-i;
-                    font-size: 150%;
-                    @include mobile-only {
-                     font-size: 100%;
-                    }
+                     @include btn-green-light-i;
+                     font-size: 150%;
+                     @include mid-screen {
+                         @include btn-green-light-i-mid-screen;
+                     }
+                     @include mobile-only {
+                      font-size: 100%;
+                      @include btn-green-light-i-phone;
+                     }
                  }
              }
         }
@@ -287,8 +295,12 @@
                 & > .fa-solid{
                     @include btn-green-light-i;
                     font-size: 150%;
+                    @include mid-screen {
+                        @include btn-green-light-i-mid-screen;
+                    }
                     @include mobile-only {
                      font-size: 100%;
+                     @include btn-green-light-i-phone;
                     }
                 }
             }

@@ -214,8 +214,21 @@
     border-radius: 50%; 
     transform: rotate(0turn);
     transition : transform 500ms ease-in-out; 
+    line-height: 75px;
+    margin-left: 40%;
    
  }
+
+ @mixin btn-green-light-i-phone {
+    line-height: 60px;
+   
+ }
+
+ @mixin btn-green-light-i-mid-screen {
+    line-height: 65px;
+   
+ }
+
 
 
 /*  =========================  specific part styling ==============================*/
