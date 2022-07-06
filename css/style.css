@@ -534,26 +534,29 @@ body {
 .header {
   width: 100%;
   height: 10%;
+  padding: 5px;
   background-color: white;
   box-shadow: 0px 5px 5px rgb(194, 191, 191);
   position: relative;
 }
 .header__logo {
   display: block;
-  margin: 20px auto;
-  height: 100%;
+  padding: 2px;
+  margin: 15px auto;
+  height: 50%;
   width: 40%;
 }
 
 .footer {
   width: 100%;
   height: 10%;
+  padding: 2px;
   background-color: rgb(54, 52, 52);
 }
 .footer__logo {
   width: 30%;
   height: 25%;
-  margin: 30px 20px 10px 30px;
+  margin: 30px 20px 10px 20px;
   filter: invert(100%);
 }
 .footer__nav__link {
@@ -562,7 +565,8 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 0px 20px 0px 30px;
+  margin: 0px 20px 0px 20px;
+  padding: 2px;
 }
 @media screen and (max-width: 600px) {
   .footer__nav__link {
@@ -594,7 +598,7 @@ body {
   }
 }
 .footer__nav > .link-last {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .presentation {
@@ -856,6 +860,9 @@ body {
   margin-bottom: 20px;
   position: relative;
 }
+.fonctionnement__btn__link__last {
+  margin-bottom: 70px;
+}
 @media screen and (max-width: 600px) {
   .fonctionnement__btn__link {
     width: 90%;
@@ -1071,23 +1078,23 @@ body {
   height: 100%;
   background-color: rgb(244, 244, 244);
   position: relative;
+  padding: 5px;
 }
 .headerpage__logo {
   display: block;
-  margin: 20px auto;
-  height: 100%;
+  margin: 15px auto;
+  height: 50%;
   width: 40%;
 }
 .headerpage__iconlink {
+  color: black;
+  text-decoration: none;
+  margin: 15px auto;
   position: absolute;
   top: 21%;
   left: 10px;
   font-weight: 900;
-  font-size: 26px;
-}
-.headerpage__iconlink a {
-  color: black;
-  text-decoration: none;
+  font-size: 35px;
 }
 .headerpage__iconlink:visited {
   color: black;
@@ -1113,7 +1120,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   .menu__img {
-    height: 200px;
+    height: 250px;
   }
 }
 .menu__title {
@@ -1133,7 +1140,7 @@ body {
     width: 100%;
     height: 5%;
     font-size: 26px;
-    top: 160px;
+    top: 200px;
     text-align: start;
     border-radius: 30px 30px 0px 0px;
     padding-left: 19px;
@@ -1182,7 +1189,7 @@ body {
 }
 .menu__entrees__title::after {
   content: "";
-  width: 50px;
+  width: 33px;
   position: absolute;
   bottom: -10px;
   left: 0px;
@@ -1360,7 +1367,7 @@ body {
 }
 .menu__plats__title::after {
   content: "";
-  width: 50px;
+  width: 33px;
   position: absolute;
   bottom: -10px;
   left: 0px;
@@ -1538,7 +1545,7 @@ body {
 }
 .menu__desserts__title::after {
   content: "";
-  width: 50px;
+  width: 33px;
   position: absolute;
   bottom: -10px;
   left: 0px;
@@ -1709,7 +1716,8 @@ body {
 @media screen and (max-width: 600px) {
   .menu__btn {
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 43px;
+    margin-top: 26px;
   }
 }
 .menu__btn:hover {

@@ -1,13 +1,15 @@
 .header {
     width: map-get($size, cover-width);
     height: 10%;
+    padding: 5px;
     background-color: $background-colour-white; 
     @include heading-shadow;
     position: relative;
     &__logo {
         display: block;
-        margin: 20px auto ;
-        height: 100%;
+        padding: 2px;
+        margin: 15px auto ;
+        height: 50%;
         width: 40%; 
     }
 }
