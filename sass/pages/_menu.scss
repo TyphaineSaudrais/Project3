@@ -55,7 +55,7 @@
             }
             &:hover {
                 .menu__entrees__choix__btn {
-                    transform: scale(100%);
+                    transform: scale(1);
                     .fa-solid {
                         transform: rotate(1turn);
                     }
@@ -149,7 +149,7 @@
 
             &:hover {
                 .menu__plats__choix__btn {
-                    transform: scale(100%);
+                    transform: scale(1);
                     .fa-solid {
                         transform: rotate(1turn);
                     }
@@ -241,7 +241,7 @@
             }
             &:hover {
                 .menu__desserts__choix__btn {
-                    transform: scale(100%);
+                    transform: scale(1);
                     .fa-solid {
                         transform: rotate(1turn);
                     }
@@ -309,7 +309,6 @@
     &__btn {
         @include btn-violet;
         margin-left: 39%;
-        margin-bottom: 30px;
         transition: all 550ms ease-in-out;
         @include mobile-only {
             margin: auto;

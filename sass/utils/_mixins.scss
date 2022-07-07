@@ -204,11 +204,10 @@
     border-radius: 0px 20px 20px 0px;
     background-color: $tertiary-colour;
     transform-origin: right;
-    transform: scale(0%, 100%);
+    transform: scale(0, 1);
     transition: transform 500ms;
 }
  @mixin btn-green-light-i {
-    display: inline block;
     margin: auto;
     @include invert-color;
     border-radius: 50%; 

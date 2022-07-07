@@ -1236,7 +1236,7 @@ body {
   animation-delay: 800ms;
 }
 .menu__entrees__choix:hover .menu__entrees__choix__btn {
-  transform: scale(100%);
+  transform: scale(1);
 }
 .menu__entrees__choix:hover .menu__entrees__choix__btn .fa-solid {
   transform: rotate(1turn);
@@ -1321,11 +1321,10 @@ body {
   border-radius: 0px 20px 20px 0px;
   background-color: #99E2D0;
   transform-origin: right;
-  transform: scale(0%, 100%);
+  transform: scale(0, 1);
   transition: transform 500ms;
 }
 .menu__entrees__choix__btn > .fa-solid {
-  display: inline block;
   margin: auto;
   filter: invert(100%);
   border-radius: 50%;
@@ -1422,7 +1421,7 @@ body {
   animation-delay: 800ms;
 }
 .menu__plats__choix:hover .menu__plats__choix__btn {
-  transform: scale(100%);
+  transform: scale(1);
 }
 .menu__plats__choix:hover .menu__plats__choix__btn .fa-solid {
   transform: rotate(1turn);
@@ -1507,11 +1506,10 @@ body {
   border-radius: 0px 20px 20px 0px;
   background-color: #99E2D0;
   transform-origin: right;
-  transform: scale(0%, 100%);
+  transform: scale(0, 1);
   transition: transform 500ms;
 }
 .menu__plats__choix__btn > .fa-solid {
-  display: inline block;
   margin: auto;
   filter: invert(100%);
   border-radius: 50%;
@@ -1608,7 +1606,7 @@ body {
   animation-delay: 800ms;
 }
 .menu__desserts__choix:hover .menu__desserts__choix__btn {
-  transform: scale(100%);
+  transform: scale(1);
 }
 .menu__desserts__choix:hover .menu__desserts__choix__btn .fa-solid {
   transform: rotate(1turn);
@@ -1693,11 +1691,10 @@ body {
   border-radius: 0px 20px 20px 0px;
   background-color: #99E2D0;
   transform-origin: right;
-  transform: scale(0%, 100%);
+  transform: scale(0, 1);
   transition: transform 500ms;
 }
 .menu__desserts__choix__btn > .fa-solid {
-  display: inline block;
   margin: auto;
   filter: invert(100%);
   border-radius: 50%;
@@ -1732,7 +1729,6 @@ body {
   margin-bottom: 40px;
   margin-top: 20px;
   margin-left: 39%;
-  margin-bottom: 30px;
   transition: all 550ms ease-in-out;
 }
 @media screen and (max-width: 600px) {
