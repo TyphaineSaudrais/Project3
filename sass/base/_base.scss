@@ -481,13 +481,7 @@ a,footer, header, nav, section {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
-        * {
-            font-family: "Roboto", serif, sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            text-decoration: none;
-           
-        }
+      
         .menu__title {
             font-family: "Shrikhand", "Roboto", serif, sans-serif;
         }
@@ -497,11 +491,7 @@ a,footer, header, nav, section {
             margin: 0;
             padding: 0;
             position: relative;
-            -webkit-box-sizing:border-box;
-            -moz-box-sizing:border-box;
-            box-sizing:border-box;
-            box-sizing:inherit;
-
+            
         }
         
         body {
@@ -510,6 +500,15 @@ a,footer, header, nav, section {
             color: $text-colour-black;
             margin: 0 auto;
             padding: 0;
+            font-family: "Roboto", serif, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            text-decoration: none;
+            -webkit-box-sizing:border-box;
+            -moz-box-sizing:border-box;
+            box-sizing:border-box;
+            box-sizing:inherit;
+
            
         }
 
@@ -518,6 +517,7 @@ a,footer, header, nav, section {
         *,*:before, *::after {
             margin: 0;
             padding: 0;
+            text-decoration: none;
         }
 
        
